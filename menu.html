@@ -12,7 +12,7 @@
         <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#scrollSpy" data-offset="0">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
             <a class="navbar-brand" href="#">
@@ -44,14 +44,13 @@
             </div>
         </nav>
 
-        
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-2" >
                     
                     <nav class="navbar navbar-light" id="scrollSpy" style="position:fixed;" data-spy="affix" data-offset-top="200">
                         <nav class="nav nav-pills nav-stacked flex-column bg-light">
-                            <p class="navbar-brand lead text-center font-italic">Ēdienkarte</p>
+                            <p class="navbar-brand lead text-center font-italic" href="#">Ēdienkarte</p>
                             <hr id="menuline"/>
                             <a class="nav-link lead" href="#specials">Īpašie piedāvājumi</a>
                             <a class="nav-link lead" href="#vegetarian">Veģetārie ēdieni</a>
@@ -61,7 +60,7 @@
 
                 </div>
                 <div class="col-md-8">
-                    <div data-spy="scroll" data-target="myscrollSpy" data-offset="0">
+                    <div >
                         <div class="p-4">
                             <h2 id="specials" class="display-4">Īpašie piedāvājumi</h2>
                             <div class="row p-4">
@@ -167,10 +166,10 @@
                     </div>
                 </div>
                 <hr/>
-                <h4 class="text-center lead p-0 m-0"><span class="fa fa-copyright fa-1x"></span>  Klāvs Spruģevics 2021</h4>
+                <h4 class="text-center lead p-0 m-0"><span class="far fa-copyright fa-1x"></span>  Klāvs Spruģevics 2021</h4>
             </div>
         </div>
-        
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
