@@ -1,0 +1,178 @@
+<!-- Klāvs Spruģevics, 07.03.2021. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+		<title>MD1 - Klāvs Spruģevics</title>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <a class="navbar-brand" href="#">
+                <img src="images/apple.png" width="50" height="50" alt="">
+            </a>
+
+            <a class="navbar-brand lead" href="home.html">Restorāns Ābols</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link lead" href="menu.html">Ēdienkarte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link lead" href="#">Restorāni</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle lead" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Par mums
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item lead" href="#">Kontakti</a>
+                            <a class="dropdown-item lead" href="#">Vakances</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2" >
+                    
+                    <nav class="navbar navbar-light" id="scrollSpy" style="position:fixed;" data-spy="affix" data-offset-top="200">
+                        <nav class="nav nav-pills nav-stacked flex-column bg-light">
+                            <p class="navbar-brand lead text-center font-italic">Ēdienkarte</p>
+                            <hr id="menuline"/>
+                            <a class="nav-link lead" href="#specials">Īpašie piedāvājumi</a>
+                            <a class="nav-link lead" href="#vegetarian">Veģetārie ēdieni</a>
+                            <a class="nav-link lead" href="#vegan">Vegāniskie ēdieni</a>
+                        </nav>
+                    </nav>
+
+                </div>
+                <div class="col-md-8">
+                    <div data-spy="scroll" data-target="myscrollSpy" data-offset="0">
+                        <div class="p-4">
+                            <h2 id="specials" class="display-4">Īpašie piedāvājumi</h2>
+                            <div class="row p-4">
+                                <div class="col-xs-3 mr-4">
+                                    <img class="rounded" src="images/food1.jpg">
+                                </div>
+                                <div class="col-md-9">
+                                    <h3>Ēdiens #1</h3>
+                                    <hr/>
+                                    <p>Šis ēdiens jums noteikti jānogaršo. Maecenas vel interdum massa. Nam nec justo a dui tempus aliquam. Suspendisse sollicitudin lacus non ligula vehicula tincidunt. Maecenas venenatis eros ac malesuada placerat. Fusce in aliquet purus, in iaculis sapien. Vivamus nec sem nibh. Nunc aliquet nisl nec nunc egestas, eu ornare risus accumsan. Suspendisse ligula mi, consectetur nec lacus eget, sollicitudin laoreet nulla. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus dictum tincidunt mauris quis tincidunt. Maecenas laoreet massa erat, non volutpat elit faucibus ultrices. Integer dapibus ac nibh at aliquet. Suspendisse sed turpis ac magna rutrum aliquam.</p>
+
+                                    <p class="lead text-right">4.00 <span class="fas fa-euro-sign"></span></p>
+                                </div>
+                            </div>
+                            <div class="row p-4">
+                                <div class="col-xs-3 mr-4">
+                                    <img class="rounded" src="images/food2.jpg" style="width:225px;">
+                                </div>
+                                <div class="col-md-9">
+                                    <h3>Ēdiens #2</h3>
+                                    <hr/>
+                                    <p>Šis ēdiens jums noteikti jānogaršo. Maecenas vel interdum massa. Nam nec justo a dui tempus aliquam. Suspendisse sollicitudin lacus non ligula vehicula tincidunt. Maecenas venenatis eros ac malesuada placerat. Fusce in aliquet purus, in iaculis sapien. Vivamus nec sem nibh. Nunc aliquet nisl nec nunc egestas, eu ornare risus accumsan. Suspendisse ligula mi, consectetur nec lacus eget, sollicitudin laoreet nulla. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus dictum tincidunt mauris quis tincidunt. Maecenas laoreet massa erat, non volutpat elit faucibus ultrices. Integer dapibus ac nibh at aliquet. Suspendisse sed turpis ac magna rutrum aliquam.</p>
+
+                                    <p class="lead text-right">6.00 <span class="fas fa-euro-sign"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="p-4">
+                            <h2 id="vegetarian" class="display-4">Veģetārie ēdieni</h2>
+                            <div class="row p-4">
+                                <div class="col-xs-3 mr-4">
+                                    <img class="rounded" src="images/food3.jpg" style="width:225px;">
+                                </div>
+                                <div class="col-md-9">
+                                    <h3>Ēdiens #3</h3>
+                                    <hr/>
+                                    <p>Šis ēdiens jums noteikti jānogaršo. Maecenas vel interdum massa. Nam nec justo a dui tempus aliquam. Suspendisse sollicitudin lacus non ligula vehicula tincidunt. Maecenas venenatis eros ac malesuada placerat. Fusce in aliquet purus, in iaculis sapien. Vivamus nec sem nibh. Nunc aliquet nisl nec nunc egestas, eu ornare risus accumsan. Suspendisse ligula mi, consectetur nec lacus eget, sollicitudin laoreet nulla. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus dictum tincidunt mauris quis tincidunt. Maecenas laoreet massa erat, non volutpat elit faucibus ultrices. Integer dapibus ac nibh at aliquet. Suspendisse sed turpis ac magna rutrum aliquam.</p>
+
+                                    <p class="lead text-right">5.00 <span class="fas fa-euro-sign"></span></p>
+                                </div>
+                            </div>
+                            <div class="row p-4">
+                                <div class="col-xs-3 mr-4">
+                                    <img class="rounded" src="images/food4.jpg" style="width:225px;">
+                                </div>
+                                <div class="col-md-9">
+                                    <h3>Ēdiens #4</h3>
+                                    <hr/>
+                                    <p>Šis ēdiens jums noteikti jānogaršo. Maecenas vel interdum massa. Nam nec justo a dui tempus aliquam. Suspendisse sollicitudin lacus non ligula vehicula tincidunt. Maecenas venenatis eros ac malesuada placerat. Fusce in aliquet purus, in iaculis sapien. Vivamus nec sem nibh. Nunc aliquet nisl nec nunc egestas, eu ornare risus accumsan. Suspendisse ligula mi, consectetur nec lacus eget, sollicitudin laoreet nulla. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus dictum tincidunt mauris quis tincidunt. Maecenas laoreet massa erat, non volutpat elit faucibus ultrices. Integer dapibus ac nibh at aliquet. Suspendisse sed turpis ac magna rutrum aliquam.</p>
+
+                                    <p class="lead text-right">6.99 <span class="fas fa-euro-sign"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="p-4">
+                            <h2 id="vegan" class="display-4">Vegāniskie ēdieni</h2>
+                            <div class="row p-4">
+                                <div class="col-xs-3 mr-4">
+                                    <img class="rounded" src="images/food5.jpg" style="width:225px;">
+                                </div>
+                                <div class="col-md-9">
+                                    <h3>Ēdiens #3</h3>
+                                    <hr/>
+                                    <p>Šis ēdiens jums noteikti jānogaršo. Maecenas vel interdum massa. Nam nec justo a dui tempus aliquam. Suspendisse sollicitudin lacus non ligula vehicula tincidunt. Maecenas venenatis eros ac malesuada placerat. Fusce in aliquet purus, in iaculis sapien. Vivamus nec sem nibh. Nunc aliquet nisl nec nunc egestas, eu ornare risus accumsan. Suspendisse ligula mi, consectetur nec lacus eget, sollicitudin laoreet nulla. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus dictum tincidunt mauris quis tincidunt. Maecenas laoreet massa erat, non volutpat elit faucibus ultrices. Integer dapibus ac nibh at aliquet. Suspendisse sed turpis ac magna rutrum aliquam.</p>
+
+                                    <p class="lead text-right">5.00 <span class="fas fa-euro-sign"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="container-fluid">
+            <div class="jumbotron m-0 p-3" style="background:transparent">
+                <hr/>
+                <div class="row">
+                    <div class="col-sm">
+                        <p class="text-right h5">Twitter:</p>
+                    </div>
+                    <div class="col-sm">
+                        <span class="fab fa-twitter fa-2x"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <p class="text-right h5">Facebook:</p>
+                    </div>
+                    <div class="col-sm">
+                        <span class="fab fa-facebook-square fa-2x"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <p class="text-right h5">Instagram:</p>
+                    </div>
+                    <div class="col-sm">
+                        <span class="fab fa-instagram fa-2x"></span>
+                    </div>
+                </div>
+                <hr/>
+                <h4 class="text-center lead p-0 m-0"><span class="fa fa-copyright fa-1x"></span>  Klāvs Spruģevics 2021</h4>
+            </div>
+        </div>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
