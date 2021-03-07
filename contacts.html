@@ -1,0 +1,171 @@
+<!-- Klāvs Spruģevics, 07.03.2021. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+		<title>MD1 - Klāvs Spruģevics</title>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <a class="navbar-brand" href="#">
+                <img src="images/apple.png" width="50" height="50" alt="">
+            </a>
+
+            <a class="navbar-brand lead" href="home.html">Restorāns Ābols</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link lead" href="menu.html">Ēdienkarte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link lead" href="locations.html">Restorāni</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle lead" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Par mums
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item lead" href="contacts.html">Kontakti</a>
+                            <a class="dropdown-item lead" href="jobs.html">Vakances</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <ul class="nav nav-pills nav-justified mb-3 lead" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="pills-kontakti-tab" data-toggle="pill" href="#pills-kontakti" role="tab" aria-controls="pills-kontakti" aria-selected="true">Kontakti</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-message-tab" data-toggle="pill" href="#pills-message" role="tab" aria-controls="pills-message" aria-selected="false">Sazinies ar mums!</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active m-4" id="pills-kontakti" role="tabpanel" aria-labelledby="pills-kontakti-tab">
+                <div class="col text-center">
+                    <a class="btn btn-primary btn-block lead mb-4" data-toggle="collapse" href="#epastsCollapse" role="button" aria-expanded="false" aria-controls="epastsCollapse">E-pasts</a>
+                </div>
+                <div class="col text-center">
+                    <div class="collapse multi-collapse" id="epastsCollapse">
+                        <div class="card card-body bg-light mb-5">
+                            <p class="lead font-italic"><i class="far fa-envelope"></i> informacija@restoransabols.lv</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <a class="btn btn-primary btn-block lead mb-4" data-toggle="collapse" href="#telefonsCollapse" role="button" aria-expanded="false" aria-controls="telefonsCollapse">Telefona nr.</a>
+                </div>
+                <div class="col text-center">
+                    <div class="collapse multi-collapse" id="telefonsCollapse">
+                        <div class="card card-body bg-light  mb-5">
+                            <p class="lead font-italic"> <i class="fas fa-phone"></i> +371 27777667</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <a class="btn btn-primary btn-block lead mb-4" data-toggle="collapse" href="#adreseCollapse" role="button" aria-expanded="false" aria-controls="adreseCollapse">Adrese</a>
+                </div>
+                <div class="col text-center">
+                    <div class="collapse multi-collapse" id="adreseCollapse">
+                        <div class="card card-body bg-light mb-5">
+                            <p class="lead font-italic"><i class="fas fa-inbox"></i> Ģertrūdes iela, Latgales priekšpilsēta, Rīga, LV-1011</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-message" role="tabpanel" aria-labelledby="pills-message-tab">
+                <form>
+                    <div class="container-fluid">
+                        <div class="row mt-5 justify-content-center">
+                            <div class="form-group text-center lead p-3">
+                                <label class="display-4" for="vards">Vārds</label>
+                                <input type="text" class="form-control lead text-center" id="vardsInput" placeholder="Vārds">
+                            </div>
+                            <div class="form-group text-center lead p-3">
+                                <label class="display-4" for="uzvards">Uzvārds</label>
+                                <input type="text" class="form-control lead text-center" id="uzvardsInput" placeholder="Uzvārds">
+                            </div>
+                            <div class="form-group text-center lead p-3">
+                                <label class="display-4 " for="epasts">E-pasts</label>
+                                <input type="email" class="form-control lead text-center" id="emailInput" placeholder="E-pasts">
+                            </div>
+                        </div>
+                        <div class="justify-content-center mx-5 px-5">
+                          <div class="form-group text-center lead p-3">
+                            <label class="display-4" for="komentars">Ziņa</label>
+                            <textarea class="form-control lead" id="komentarsInput" rows="4"></textarea>
+                          </div>
+                            <button type="button" class="btn btn-primary btn-block lead" data-toggle="modal" data-target="#veiksmigiModal">Nosūtīt ziņojumu</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="modal fade" id="veiksmigiModal" tabindex="-1" role="dialog" aria-labelledby="veiksmigiModal" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Ziņa nosūtīta</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                            Ziņa nosūtīta! Ar jums sazināsies kāds no mūsu pārstāvjiem!
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" data-dismiss="modal">Labi!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="jumbotron m-0 p-3" style="background:transparent">
+                <div class="row">
+                    <div class="col-sm">
+                        <p class="text-right h5">Twitter:</p>
+                    </div>
+                    <div class="col-sm">
+                        <span class="fab fa-twitter fa-2x"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <p class="text-right h5">Facebook:</p>
+                    </div>
+                    <div class="col-sm">
+                        <span class="fab fa-facebook-square fa-2x"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <p class="text-right h5">Instagram:</p>
+                    </div>
+                    <div class="col-sm">
+                        <span class="fab fa-instagram fa-2x"></span>
+                    </div>
+                </div>
+                <hr/>
+                <h4 class="text-center lead p-0 m-0"><span class="fa fa-copyright fa-1x"></span>  Klāvs Spruģevics 2021</h4>
+            </div>
+        </div>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+    </body>
+</html>
